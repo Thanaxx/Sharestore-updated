@@ -1,0 +1,86 @@
+@import "./components";
+
+*{
+    @include elements();
+}
+body{
+    background-color: $mainBG;
+}
+.create{
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: $mainBG;
+
+        i{
+            float: right;
+            color: grey;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+    form{
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+
+        input[type="text"]{
+            @include create();
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 1px solid $mainColor;
+        }
+        textarea{
+            @include create();
+            min-height: 50vh;
+            font-size: 18px;
+        }
+    }
+}
+
+.modalWrite{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1818188f;
+    min-height: 100vh;
+    display: none;
+    ul{
+        width: 160px;
+        height: auto;
+        background-color: white;
+        padding: 20px;
+        float: right;
+        margin: 40px 20px;
+        
+        li{
+            list-style-type: none;
+            padding: 6px 0px;
+            margin: 2px 0;
+
+            button{
+                background-color: white;
+                outline: none;
+                border: none;
+                color: $mainColor;
+                font-size: 16px;
+
+                &:hover{
+                    color: rgb(201, 90, 0);
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $mainColor;
+
+                &:hover{
+                    color: rgb(201, 90, 0);
+                }
+            }
+        }
+    }
+}

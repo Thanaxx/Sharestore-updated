@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF4B1;
+}
+
+body.drk {
+  background-color: #414141;
+}
+
+.collapsible {
+  width: 100%;
+  min-height: auto;
+  padding: 40px 50px 0px 50px;
+}
+
+.collapsible .options {
+  padding-left: 350px;
+}
+
+.collapsible .options .collap {
+  background-color: #FFCA28;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  text-align: left;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.collapsible .options .collap i {
+  float: right;
+}
+
+.collapsible .options .collap .active, .collapsible .options .collap:hover {
+  background-color: #fce055;
+}
+
+.collapsible .options .content {
+  padding: 10px;
+  background-color: #FFCA28;
+  color: white;
+  overflow: hidden;
+  display: none;
+}
+/*# sourceMappingURL=setting.css.map */

@@ -1,0 +1,9 @@
+@import url(./mainpage);
+@import url(./homeA);
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=components.css.map */

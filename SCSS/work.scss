@@ -1,0 +1,56 @@
+@import "./components";
+
+*{
+    @include elements();
+}
+body{
+    background-color:$mainBG;
+}
+body.drk{
+    background-color: rgb(65, 65, 65);
+}
+.savedWorks{
+    width: 100%;
+    min-height: auto;
+    padding: 40px 50px 0px 50px;
+
+    .listWork{
+        margin-left: 300px;
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+    .works{
+        width: 30%;
+        background-color: #ffffff;
+        margin: 15px;
+        padding: 20px 25px;
+        min-height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px #80808081;
+        color: $mainColor;
+
+        &:hover{
+            box-shadow: 0px 2px 10px #ffc928ab;
+        }
+
+        h2, p, i{
+            padding: 8px 0;
+        }
+        p{
+            color: #3f3f3f7c;
+            font-size: 14px;
+        }
+        button{
+            border: none;
+            outline: none;
+            float: right;
+            background-color: rgba(255, 222, 173, 0);
+
+            i{
+                font-size: 22px;
+                color: $mainColor;
+            }
+        }
+    }
+}

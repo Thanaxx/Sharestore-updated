@@ -1,0 +1,49 @@
+@import "./components";
+
+*{
+    @include elements();
+}
+body{
+    background-color:$mainBG;
+}
+body.drk{
+    background-color: rgb(65, 65, 65);
+}
+
+.collapsible{
+    width: 100%;
+    min-height: auto;
+    padding: 40px 50px 0px 50px;
+
+
+    .options{
+        padding-left: 350px;
+
+        .collap{
+            background-color: $mainColor;
+            cursor: pointer;
+            width: 100%;
+            padding: 20px;
+            border: none;
+            outline: none;
+            text-align: left;
+            transition: 0.4s;
+            margin-top: 10px;
+
+            i{
+                float: right;
+            }
+
+            .active, &:hover{
+                background-color: #fce055;
+            }
+        }
+        .content{
+            padding: 10px;
+            background-color:$mainColor;
+            color: white;
+            overflow: hidden;
+            display: none;
+        }
+    }
+}

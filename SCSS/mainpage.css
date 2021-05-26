@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF4B1;
+}
+
+.main {
+  font-family: arial;
+}
+
+.main .sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFCA28;
+  min-height: 100vh;
+}
+
+.main .sidebar img {
+  display: block;
+}
+
+.main .sidebar .Logo {
+  padding: 10px 20px;
+}
+
+.main .sidebar .User {
+  width: 100%;
+  padding: 0px 60px;
+}
+
+.main .sidebar p {
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+
+.main .sidebar .userfullname {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .sidebar .username {
+  color: #888888c4;
+}
+
+.main .sidebar a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  margin-left: 45px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: arial;
+}
+
+.main .options {
+  width: 100%;
+  min-height: auto;
+  padding: 40px 50px 0px 50px;
+}
+
+.main .options .selection {
+  margin-left: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .options .selection .find {
+  border: 1px solid grey;
+  background-color: hotpink;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  background-color: #ffc92871;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+}
+
+.main .options .selection .find input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffc92800;
+  color: white;
+  font-weight: lighter;
+}
+
+.main .options .selection .find input::-webkit-input-placeholder {
+  color: rgba(65, 65, 65, 0.295);
+}
+
+.main .options .selection .find input:-ms-input-placeholder {
+  color: rgba(65, 65, 65, 0.295);
+}
+
+.main .options .selection .find input::-ms-input-placeholder {
+  color: rgba(65, 65, 65, 0.295);
+}
+
+.main .options .selection .find input::placeholder {
+  color: rgba(65, 65, 65, 0.295);
+}
+
+.main .options .selection .caption p {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 20px;
+  color: #494949;
+}
+
+.main .options .selection .opt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #ffffff;
+  margin: 0px 15px;
+  padding: 40px 20px;
+  min-height: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 6px #80808081;
+          box-shadow: 0px 2px 6px #80808081;
+  color: #FFCA28;
+}
+
+.main .options .selection .opt a {
+  color: #FFCA28;
+}
+
+.main .options .selection .opt i {
+  font-size: 40px;
+  color: #ffc928b9;
+}
+
+.main .options .selection .opt i, .main .options .selection .opt h1, .main .options .selection .opt p, .main .options .selection .opt a {
+  padding: 8px 0;
+}
+
+.main .options .selection .opt p {
+  color: #3f3f3fab;
+}
+
+.main .options .selection .opt h1 {
+  letter-spacing: 4px;
+}
+
+.main .options .selection .opt:hover {
+  -webkit-box-shadow: 0px 2px 10px #ffc928ab;
+          box-shadow: 0px 2px 10px #ffc928ab;
+}
+/*# sourceMappingURL=mainpage.css.map */

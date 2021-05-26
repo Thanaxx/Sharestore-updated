@@ -1,0 +1,127 @@
+@import "./_components";
+
+*{
+    @include elements();
+}
+body{
+    background-color: $mainBG;
+}
+.main{
+    font-family: arial;
+
+    .sidebar{
+        width: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $mainColor;
+        min-height: 100vh;
+
+        img{
+            display: block;
+        }
+        .Logo{
+            padding: 10px 20px;
+        }
+        .User{
+            width: 100%;
+            padding: 0px 60px
+        }
+        p{
+            padding: 5px 0;
+            text-align: center;
+            color: $textcolor;
+        }
+        .userfullname{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .username{
+            color: #888888c4
+        }
+
+        a{
+            @include links();
+        }
+    }
+
+    .options{
+        width: 100%;
+        min-height: auto;
+        padding: 40px 50px 0px 50px;
+
+        .selection{
+            margin-left: 300px;
+            display: flex;
+            text-align: left;
+            flex-wrap: wrap;
+
+            .find{
+                border: 1px solid grey;
+                background-color: hotpink;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding: 8px 15px;
+                background-color: #ffc92871;
+                border-radius: 20px;
+                border: 1px solid white;
+                color: white;
+
+                input{
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    background-color: #ffc92800;
+                    color: white;
+                    font-weight: lighter;
+
+                    &::placeholder{
+                        color: rgba(65, 65, 65, 0.295);
+                    }
+                }
+            }
+        
+            .caption{
+                p{
+                    text-align: center;
+                    padding: 50px 0;
+                    font-size: 20px;
+                    color: rgb(73, 73, 73);
+                }
+            }
+
+            .opt{
+                flex: 1;
+                background-color: #ffffff;
+                margin: 0px 15px;
+                padding: 40px 20px;
+                min-height: auto;
+                border-radius: 8px;
+                box-shadow: 0px 2px 6px #80808081;
+                color: $mainColor;
+
+                a{
+                    color: $mainColor;
+                }
+                i{
+                    font-size: 40px;
+                    color: #ffc928b9;
+                }
+                i, h1, p, a{
+                    padding: 8px 0;
+                }
+                p{
+                    color: #3f3f3fab;
+                }
+                h1{
+                    letter-spacing: 4px;
+                }
+
+                &:hover{
+                    box-shadow: 0px 2px 10px #ffc928ab;
+                }
+            }
+        }
+    }
+}

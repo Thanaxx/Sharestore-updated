@@ -1,0 +1,108 @@
+@import "./components";
+
+*{
+    @include elements();
+}
+.home{
+    background-color: $mainColor;
+    min-height: 100vh;
+
+    .cover{
+        @include centerAbsolute();
+
+        text-align: center;
+        color: $textcolor;
+
+        h1{
+            font-size: 60px;
+            letter-spacing: 2px;
+            text-shadow: 0px 3px 4px #00000049;
+            font-weight: lighter;
+        }
+        p{
+            font-size: 18px;
+            letter-spacing: 7px;
+            font-weight: lighter;
+        }
+        .Start{
+            float: right;
+            margin: 20px 30px;
+            cursor: pointer;
+            @include submitbtn();
+            background-color: $textcolor;
+            width: 85%;
+
+            a{
+                text-decoration: none;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.loginPage{
+        display: none;
+        min-height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.726);
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+
+        form{
+            background: $textcolor;
+            padding: 20px;
+            min-height: 430px;
+            width: 350px;
+            border-radius: 10px;
+            animation: log 0.7s;
+            @include centerAbsolute();
+        
+            @keyframes log{
+                from{
+                    top: -100px;
+                }
+                to{
+                    top: 50%;
+                }
+            }
+
+        .frmlogo{
+            text-align: center;
+            margin-bottom: 20px;
+
+            p{
+                font-size: 24px;
+                color: $mainColor;
+            }
+        }
+
+        .inputEmail{
+            @include inputfield();
+        }
+
+        .inputPassword{
+            @include inputfield();
+        }
+
+        input{
+            width: 100%;
+            outline: none;
+            border: none;
+            padding-left: 10px;
+        }
+
+        span i{
+            color: rgb(189, 189, 189);
+        }
+
+        .submitBtn{
+            text-align: center;
+            button{
+                @include submitbtn();
+                margin: 20px 0;
+            }
+        }
+    }
+}
